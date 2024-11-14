@@ -1,0 +1,30 @@
+/* src/components/PurchaseForm.css */
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .purchase-form label {
+    margin-bottom: 10px;
+  }
+  
+  .purchase-form input {
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .purchase-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .purchase-form button:hover {
+    background-color: #45a049;
+  }
+  

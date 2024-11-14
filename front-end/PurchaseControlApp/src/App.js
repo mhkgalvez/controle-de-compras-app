@@ -1,25 +1,28 @@
+
 import logo from './logo.svg';
 import './App.css';
+import PurchaseForm from './components/PurchaseForm';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload this.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const handlePurchaseSubmit = (data) => {
+        console.log("Submitted purchase data:", data);
+        // Aqui você pode chamar a API de backend para salvar a compra no banco de dados
+    };
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+            </header>
+            <main>
+                <h1>Purchase Control</h1>
+                <PurchaseForm onSubmit={handlePurchaseSubmit} />           
+            </main>
+            <footer className="App-footer">
+                <p>Developed by</p>
+            </footer>
+        </div>
+    );
 }
 
 export default App;
